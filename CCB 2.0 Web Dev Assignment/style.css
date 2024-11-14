@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 50px 30px;
+}
+fieldset {
+  border: 1px solid #ccc;
+  margin-bottom: 50px;
+  padding: 40px;
+  box-shadow: 1px 1px 1px 1px #ccc;
+  border-radius: 7px;
+}
+input {
+  width: 100%;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid rgb(98, 169, 204);
+  border-radius: 7px;
+  transition-duration: 13s;
+}

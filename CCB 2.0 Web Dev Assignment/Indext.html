@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Testimonials</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f5ff;
+        background-image: url(bg-pattern-quotation.svg);
+        background-repeat: no-repeat;
+        background-position-x: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 20px;
+      }
+
+      .testimonial-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+        max-width: 1000px;
+        width: 100%;
+      }
+
+      .testimonial-container img {
+        border-radius: 50px;
+      }
+
+      .testimonial-card {
+        padding: 20px;
+        border-radius: 10px;
+        color: white;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        font-size: 0.9em;
+      }
+
+      .testimonial-card h3 {
+        margin-top: 0;
+        font-size: 1.2em;
+      }
+
+      .testimonial-card p {
+        margin: 10px 0 0;
+        font-size: 0.85em;
+      }
+
+      /* Colors for different cards */
+      .purple {
+        background-color: #7d4bf3;
+        grid-column: span 2;
+      }
+      .blue {
+        background-color: #4a5b7c;
+        grid-column: span 1;
+      }
+      .light-gray {
+        background-color: #f2f4f8;
+        color: #333;
+        grid-column: span 1;
+      }
+      .dark-blue {
+        background-color: #1e293b;
+        grid-column: span 2;
+      }
+      .white {
+        background-color: #ffffff;
+        color: #333;
+        grid-column: span 1;
+      }
+
+      /* Responsive layout for smaller screens */
+      @media (max-width: 768px) {
+        .testimonial-container {
+          grid-template-columns: 1fr;
+        }
+        .testimonial-card {
+          grid-column: span 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="testimonial-container">
+      <div class="testimonial-card purple">
+        <img src="image-daniel.jpg" />
+        <h3>Daniel Clifford</h3>
+        <h2 class="text-[13px] font-semibold mb-1 text-white">
+          Daniel Clifford
+        </h2>
+
+        <p>
+          I received a job offer mid-course, and the subjects I learned were
+          current, if not more so, in the company I joined. I honestly feel I
+          got every penny’s worth.
+        </p>
+        <p>
+          “I was an EMT for many years before I joined the bootcamp. I've been
+          looking to make a transition and have heard some people who had an
+          amazing experience here. I signed up for the free intro course and
+          found it incredibly fun! I enrolled shortly thereafter. The next 12
+          weeks was the best—and most grueling—time of my life. Since completing
+          the course, I've successfully switched careers, working as a Software
+          Engineer at a VR startup.”
+        </p>
+      </div>
+
+      <div class="testimonial-card blue">
+        <img src="image-jonathan.jpg" />
+        <h3>Jonathan Walters</h3>
+
+        <p>The team was very supportive and kept me motivated.</p>
+        <p>
+          “I started as a total newbie with virtually no coding skills. I now
+          work as a mobile engineer for a big company. This was one of the best
+          investments I've made in myself.”
+        </p>
+      </div>
+
+      <div class="testimonial-card light-gray">
+        <img src="image-jeanette.jpg" />
+        <p class="img">Jeanette Harmon</p>
+
+        <p>An overall wonderful and rewarding experience</p>
+        <p>
+          “Thank you for the wonderful experience! I now have a job I really
+          enjoy, and make a good living while doing something I love.”
+        </p>
+      </div>
+
+      <div class="testimonial-card dark-blue">
+        <img src="image-patrick.jpg" />
+        <h3>Patrick Abrams</h3>
+
+        <p>
+          Awesome teaching support from TAs who did the bootcamp themselves.
+          Getting guidance from them and learning from their experiences was
+          easy.
+        </p>
+        <p>
+          “The staff seemed genuinely concerned about my progress which I find
+          really refreshing. The program gave me the confidence necessary to be
+          able to go out in the world and present myself as a capable junior
+          developer. The standard is above and beyond. This was one of the best
+          investments I made in myself.”
+        </p>
+      </div>
+
+      <div class="testimonial-card white">
+        <img src="image-kira.jpg" />
+        <h3>Kira Whittle</h3>
+
+        <p>Such a life-changing experience. Highly recommended!</p>
+        <p>
+          “Before joining the bootcamp, I’d never written a line of code. I
+          needed some structure from professionals who can help me learn
+          programming step by step. I was encouraged to enroll by a former
+          student of theirs who can only say wonderful things about the program.
+          The entire curriculum and staff did not disappoint. They were very
+          hands-on and I never had to wait long for assistance. The agile team
+          project, in particular, was outstanding. It took my learning to the
+          next level in a way that no tutorial could ever have. In fact, I've
+          often referred to it during interviews as an example of my development
+          experience. It certainly helped me land a job as a full-stack
+          developer after receiving multiple offers. 100% recommend!”
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
